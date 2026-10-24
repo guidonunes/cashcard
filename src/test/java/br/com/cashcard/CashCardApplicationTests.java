@@ -1,5 +1,6 @@
 package br.com.cashcard;
 
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.resttestclient.TestRestTemplate;
@@ -12,10 +13,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureTestRestTemplate
-class CashCardApplicationTests {
+public class CashCardApplicationTests {
 
     @Autowired
-    TestRestTemplate restTemplate;
+    private TestRestTemplate restTemplate;
 
 	@Test
 	public void shouldReturnACashCardWhenDataIsSaved() {
