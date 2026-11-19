@@ -1,4 +1,4 @@
-package example.cashcard;
+package br.com.cashcard;
 
 import br.com.cashcard.model.CashCard;
 import com.jayway.jsonpath.DocumentContext;
